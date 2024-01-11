@@ -90,7 +90,6 @@ const Register = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     />
                   </div>
-                   {/*Password input*/}
                    <div className="relative mb-4" data-te-input-wrapper-init>
                    <input 
                     type="password" 
