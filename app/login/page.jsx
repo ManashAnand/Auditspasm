@@ -61,7 +61,7 @@ const Login = () => {
                   {/*Password input*/}
                   <div className="relative mb-4" data-te-input-wrapper-init>
                   <input 
-                    type="text" 
+                    type="password" 
                     className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear   " 
                     id="exampleFormControlInput1" 
                     placeholder="Password" 
@@ -77,7 +77,6 @@ const Login = () => {
                       Log in
                     </button>
                     {/*Forgot password link*/}
-                    <a href="#!">Forgot password?</a>
                   </div>
                   {/*Register button*/}
                   <div className="flex items-center justify-between pb-6">

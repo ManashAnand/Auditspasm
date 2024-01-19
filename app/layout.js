@@ -1,9 +1,16 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
 import { NextProvider } from "@/redux/NextProvider";
-
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Lora } from 'next/font/google'
+ 
+const lora = Lora({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,12 +21,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <NextProvider>
-        <Navbar />
-        {children}
-        <Footer/>
-      </NextProvider>
+      <body className={lora.className}>
+          <NextProvider>
+        <ThemeProvider>
+            <Navbar />
+            {children}
+            <Footer />
+        </ThemeProvider>
+          </NextProvider>
       </body>
     </html>
   );

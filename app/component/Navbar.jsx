@@ -9,6 +9,7 @@ import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 
 import { logOut } from "@/redux/slices/UserSlice";
+import { ModeToggle } from "@/components/ModeToggle";
 
 const Navbar = () => {
   const router = useRouter();
@@ -23,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="text-gray-600 body-font bg-blue-200">
+      <header className="text-gray-600 body-font bg-[#faedcd]">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link
             href="/"
@@ -33,12 +34,12 @@ const Navbar = () => {
             {/* <span className="ml-3 text-xl">AuditSpasm</span> */}
           </Link>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-gray-900 cursor-pointer hover:underline">
+            <Link href='/faq' className="mr-5 hover:text-gray-900 cursor-pointer hover:underline">
               FAQ
-            </a>
-            <a className="mr-5 hover:text-gray-900 cursor-pointer hover:underline">
+            </Link>
+            <Link href='/contact' className="mr-5 hover:text-gray-900 cursor-pointer hover:underline">
               Contact Us
-            </a>
+            </Link>
           </nav>
           {Object.keys(state).length === 0 ? (
             <button
@@ -49,9 +50,9 @@ const Navbar = () => {
             </button>
           ) : (
             <>
-              <a className="mr-5 mr-5 hover:text-gray-900 cursor-pointer hover:underline">
+              <Link href='/Audit' className=" mr-5 hover:text-gray-900 cursor-pointer hover:underline">
                 Audit Form
-              </a>
+              </Link>
               <button
                 className="inline-flex items-center bg-gray-700 border-0 py-1 px-3 focus:outline-none  rounded text-base mt-4 md:mt-0 text-gray-900 text-white border-gray-300  hover:bg-gray-100 hover:text-black focus:ring-4 focus:ring-gray-200 font-medium"
                 onClick={handleLogout}
