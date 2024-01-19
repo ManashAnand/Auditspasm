@@ -4,6 +4,8 @@ import { useRouter } from 'next/navigation'
 import axios from "axios"
 import { useDispatch } from 'react-redux';
 import { logIn } from '@/redux/slices/UserSlice';
+import iqac from '../assets/iqac2.png'
+import Image from 'next/image';
 
 const Login = () => {
     const router = useRouter()
@@ -41,9 +43,9 @@ const Login = () => {
               <div className="md:mx-6 md:p-12">
                 {/*Logo*/}
                 <div className="text-center">
-                  <img className="mx-auto w-48" src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp" alt="logo" />
+                  <Image className="mx-auto w-48" src={iqac} alt="logo" />
                   <h4 className="mb-12 mt-1 pb-1 text-xl font-semibold">
-                    We are The Lotus Team
+                    IQAC
                   </h4>
                 </div>
                 <form>
@@ -94,14 +96,10 @@ const Login = () => {
             <div className="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none" style={{background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'}}>
               <div className="px-4 py-6 text-white md:mx-6 md:p-12">
                 <h4 className="mb-6 text-xl font-semibold">
-                  We are more than just a company
+                  We are more than just a audit committee
                 </h4>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
+                We transcend the role of a mere audit committee. Our commitment extends beyond financial oversight to encompass strategic planning, risk management, and ethical governance. We are dedicated to contributing to the organization's holistic success and sustainability.
                 </p>
               </div>
             </div>
