@@ -99,7 +99,7 @@ const Login = () => {
                   We are more than just a audit committee
                 </h4>
                 <p className="text-sm">
-                We transcend the role of a mere audit committee. Our commitment extends beyond financial oversight to encompass strategic planning, risk management, and ethical governance. We are dedicated to contributing to the organization's holistic success and sustainability.
+                We transcend the role of a mere audit committee. Our commitment extends beyond financial oversight to encompass strategic planning, risk management, and ethical governance. We are dedicated to contributing to the organization&apos;s holistic success and sustainability.
                 </p>
               </div>
             </div>
