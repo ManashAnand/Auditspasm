@@ -6,8 +6,10 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 
 import { logIn } from "@/redux/slices/UserSlice";
+import iqac from '../assets/iqac2.png'
 
 import axios from "axios"
+import Image from 'next/image';
 
 const Register = () => {
     const router = useRouter()
@@ -48,9 +50,9 @@ const Register = () => {
               <div className="md:mx-6 md:p-12">
                 {/*Logo*/}
                 <div className="text-center">
-                  <img className="mx-auto w-48" src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp" alt="logo" />
+                <Image className="mx-auto w-48" src={iqac} alt="logo" />
                   <h4 className="mb-12 mt-1 pb-1 text-xl font-semibold">
-                    We are The Lotus Team
+                  INTERNAL QUALITY ASSURANCE CELL
                   </h4>
                 </div>
                 <form>
@@ -138,11 +140,8 @@ const Register = () => {
                   We are more than just a company
                 </h4>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
+                We transcend the role of a mere audit committee. Our commitment extends beyond financial oversight to encompass strategic planning, risk management, and ethical governance. We are dedicated to contributing to the organization&apos;s holistic success and sustainability.
+             
                 </p>
               </div>
             </div>

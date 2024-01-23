@@ -2,7 +2,7 @@ import React from 'react'
 import iqac from '../assets/iqac2.png'
 import Image from 'next/image'
 import Link from 'next/link'
-const AuditCard = ({formUrl}) => {
+const AuditCard = ({formUrl,title,descp}) => {
   return (
     <>
     <div class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
@@ -29,12 +29,12 @@ const AuditCard = ({formUrl}) => {
   <div class="p-6">
     <div class="flex items-center justify-between mb-3">
       <h5 class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
-        Form for session 2021-2022
+        {title}
       </h5>
       
     </div>
     <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
-      Enter the form based on the audit
+      {descp}
     </p>
    
   </div>

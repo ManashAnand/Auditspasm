@@ -45,7 +45,7 @@ const Login = () => {
                 <div className="text-center">
                   <Image className="mx-auto w-48" src={iqac} alt="logo" />
                   <h4 className="mb-12 mt-1 pb-1 text-xl font-semibold">
-                    IQAC
+                  INTERNAL QUALITY ASSURANCE CELL
                   </h4>
                 </div>
                 <form>
